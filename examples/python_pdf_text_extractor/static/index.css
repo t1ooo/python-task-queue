@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#app {
+  text-align: center;
+}
+
+/* .file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+} */
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 13px 20px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  padding-top: 10px;
+}
+
+
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 20vh; */
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #45a049;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* Start position */
+  100% {
+    transform: rotate(360deg);
+  }
+
+  /* End position */
+}
